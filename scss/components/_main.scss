@@ -1,0 +1,45 @@
+@import '../base/variables';
+
+/* main */
+
+main{
+    #background{
+        background-image: url(../imagenes/fondo-agua.jpg);
+
+        #content{
+            display: grid;
+            margin-left: 10%;
+            margin-right: 10%;
+            grid-template-columns: 1;
+            grid-template-rows: 2fr 2fr;
+
+
+            #images{
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+
+            #texts{
+                background-color: rgba(173, 213, 247, 0.8);
+
+                h1{
+                    font-size: 80px;
+                    font-family: $title-1;
+                    text-shadow: $shadow-default;
+                    color: white;
+                    padding-left: 50px;
+                }
+
+                p{
+                    text-align: center;
+                    font-size: 30px;
+                    font-family: $text;
+                }
+            }
+        }
+    }
+}
